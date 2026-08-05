@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SMG Roofing & Renovations | Truro, NS Roofing Contractor</title>
+<meta name="description" content="SMG Roofing & Renovations — BBB accredited, 4.9-star roofing contractor in Truro, NS. Shingle & metal roofing, repairs, siding, and renovations across Colchester County.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1B1D1F;
+    --ink-2:#242729;
+    --ink-3:#2E3234;
+    --slate:#565C60;
+    --paper:#EFEEE8;
+    --paper-2:#E3E1D8;
+    --paper-3:#D8D5C9;
+    --copper:#B5652E;
+    --copper-dark:#8F4E22;
+    --copper-light:#D68A4E;
+    --patina:#4B7A72;
+    --patina-light:#6B9C93;
+    --text-light:#F6F5F1;
+    --text-muted:#AFB3AE;
+    --line-dark:rgba(246,245,241,0.14);
+    --line-light:rgba(27,29,31,0.12);
+    --shadow:0 20px 50px rgba(0,0,0,0.25);
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important;}
+  }
+
+  body{
+    font-family:'Inter', sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+
+  h1,h2,h3,h4{
+    font-family:'Oswald', sans-serif;
+    text-transform:uppercase;
+    letter-spacing:0.01em;
+    font-weight:600;
+    line-height:1.08;
+  }
+
+  .mono{
+    font-family:'JetBrains Mono', monospace;
+  }
+
+  .eyebrow{
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.72rem;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    color:var(--copper);
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:16px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:28px;
+    height:2px;
+    background:var(--copper);
+    display:inline-block;
+  }
+
+  a{color:inherit; text-decoration:none;}
+  ul{list-style:none;}
+  img{max-width:100%; display:block;}
+
+  .wrap{
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+
+  section{position:relative;}
+
+  /* ---------- BUTTONS ---------- */
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.85rem;
+    letter-spacing:0.04em;
+    font-weight:600;
+    padding:15px 28px;
+    border-radius:2px;
+    cursor:pointer;
+    border:1.5px solid transparent;
+    transition:transform 0.15s ease, background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    white-space:nowrap;
+  }
+  .btn:active{transform:translateY(1px);}
+  .btn-copper{
+    background:var(--copper);
+    color:var(--text-light);
+  }
+  .btn-copper:hover{background:var(--copper-dark);}
+  .btn-outline-dark{
+    border-color:var(--line-dark);
+    color:var(--text-light);
+  }
+  .btn-outline-dark:hover{border-color:var(--text-light);}
+  .btn-outline-light{
+    border-color:var(--line-light);
+    color:var(--ink);
+  }
+  .btn-outline-light:hover{border-color:var(--ink);}
+  .btn-ink{
+    background:var(--ink);
+    color:var(--text-light);
+  }
+  .btn-ink:hover{background:var(--ink-2);}
+
+  /* ---------- NAV ---------- */
+  header{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:rgba(27,29,31,0.96);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line-dark);
+  }
+  .nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:16px 28px;
+    max-width:1180px;
+    margin:0 auto;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    color:var(--text-light);
+  }
+  .brand-logo{
+    height:54px;
+    width:auto;
+    display:block;
+  }
+  .nav-links{
+    display:flex;
+    align-items:center;
+    gap:32px;
+  }
+  .nav-links a{
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.78rem;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:var(--text-muted);
+    transition:color 0.2s ease;
+  }
+  .nav-links a:hover{color:var(--text-light);}
+  .nav-cta{
+    display:flex;
+    align-items:center;
+    gap:14px;
+  }
+  .nav-phone{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    color:var(--text-light);
+  }
+  .nav-phone .label{
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.6rem;
+    letter-spacing:0.14em;
+    color:var(--text-muted);
+    text-transform:uppercase;
+  }
+  .nav-phone .num{
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.95rem;
+    font-weight:600;
+  }
+  .hamburger{
+    display:none;
+    flex-direction:column;
+    gap:5px;
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding:6px;
+  }
+  .hamburger span{
+    width:24px;
+    height:2px;
+    background:var(--text-light);
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    background:var(--ink);
+    color:var(--text-light);
+    padding:100px 0 90px;
+    overflow:hidden;
+    position:relative;
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:40px;
+    align-items:center;
+    position:relative;
+    z-index:2;
+  }
+  .hero h1{
+    font-size:clamp(2.4rem, 5.2vw, 4rem);
+    margin-bottom:22px;
+  }
+  .hero h1 em{
+    font-style:normal;
+    color:var(--copper-light);
+  }
+  .hero .eyebrow{
+    font-family:'Inter', sans-serif;
+    letter-spacing:0.14em;
+  }
+  .hero p.lead{
+    font-size:1.08rem;
+    color:var(--text-muted);
+    max-width:520px;
+    margin-bottom:34px;
+  }
+  .hero-actions{
+    display:flex;
+    gap:16px;
+    flex-wrap:wrap;
+    margin-bottom:48px;
+  }
+  .trust-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:28px;
+    border-top:1px solid var(--line-dark);
+    padding-top:26px;
+  }
+  .trust-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .trust-item svg{flex-shrink:0; color:var(--copper-light);}
+  .trust-item .t-main{
+    font-family:'JetBrains Mono', monospace;
+    font-weight:600;
+    font-size:0.9rem;
+  }
+  .trust-item .t-sub{
+    font-size:0.72rem;
+    color:var(--text-muted);
+    letter-spacing:0.02em;
+  }
+
+  .hero-logo{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    padding:8px;
+  }
+  .hero-logo::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:radial-gradient(circle at center, rgba(181,101,46,0.14) 0%, transparent 65%);
+    pointer-events:none;
+  }
+  .hero-logo img{
+    width:100%;
+    max-width:400px;
+    height:auto;
+    display:block;
+    position:relative;
+    z-index:1;
+    border-radius:6px;
+    box-shadow:0 24px 56px rgba(0,0,0,0.45);
+  }
+
+  /* roofline shape divider */
+  .roofline-divider{
+    display:block;
+    width:100%;
+    line-height:0;
+  }
+  .roofline-divider svg{width:100%; height:44px; display:block;}
+
+  /* ---------- SERVICES ---------- */
+  .services{
+    padding:100px 0;
+    background:var(--paper);
+  }
+  .section-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:24px;
+    margin-bottom:56px;
+    flex-wrap:wrap;
+  }
+  .section-head h2{
+    font-size:clamp(2rem, 4vw, 2.7rem);
+    color:var(--ink);
+  }
+  .section-head p{
+    max-width:360px;
+    color:var(--slate);
+    font-size:0.98rem;
+  }
+
+  .services-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:1px;
+    background:var(--line-light);
+    border:1px solid var(--line-light);
+  }
+  .service-card{
+    background:var(--paper);
+    padding:36px 32px;
+    transition:background 0.2s ease;
+  }
+  .service-card:hover{background:var(--paper-2);}
+  .service-card .num{
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.72rem;
+    color:var(--copper);
+    letter-spacing:0.1em;
+    margin-bottom:18px;
+    display:block;
+  }
+  .service-card svg{color:var(--ink); margin-bottom:20px;}
+  .service-card h3{
+    font-size:1.15rem;
+    margin-bottom:10px;
+    color:var(--ink);
+  }
+  .service-card p{
+    color:var(--slate);
+    font-size:0.92rem;
+  }
+
+  /* ---------- WHY CHOOSE US (spec sheet) ---------- */
+  .why{
+    background:var(--ink);
+    color:var(--text-light);
+    padding:100px 0 60px;
+  }
+  .why .section-head h2, .why .section-head p{color:var(--text-light);}
+  .why .section-head p{color:var(--text-muted);}
+
+  .spec-sheet{
+    border-top:1px solid var(--line-dark);
+  }
+  .spec-row{
+    display:grid;
+    grid-template-columns:220px 1fr 140px;
+    gap:24px;
+    align-items:center;
+    padding:26px 0;
+    border-bottom:1px solid var(--line-dark);
+  }
+  .spec-row .spec-label{
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.72rem;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--copper-light);
+  }
+  .spec-row .spec-value{
+    font-family:'Oswald', sans-serif;
+    font-size:1.3rem;
+    letter-spacing:0.01em;
+  }
+  .spec-row .spec-note{
+    font-size:0.82rem;
+    color:var(--text-muted);
+    text-align:right;
+  }
+  @media (max-width:720px){
+    .spec-row{grid-template-columns:1fr; gap:6px; text-align:left;}
+    .spec-row .spec-note{text-align:left;}
+  }
+
+  /* ---------- GALLERY ---------- */
+  .gallery{
+    padding:100px 0;
+    background:var(--paper);
+  }
+  .gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:14px;
+  }
+  .gallery-tile{
+    position:relative;
+    aspect-ratio:4/3;
+    overflow:hidden;
+    background:var(--paper-3);
+    border:1px solid var(--line-light);
+  }
+  .gallery-tile img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:transform 0.5s ease;
+  }
+  .gallery-tile:hover img{transform:scale(1.06);}
+  .gallery-fallback{
+    display:none;
+    position:absolute;
+    inset:0;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    color:var(--slate);
+    background:
+      repeating-linear-gradient(135deg, var(--paper-2) 0 2px, transparent 2px 14px),
+      var(--paper-3);
+  }
+  .gallery-fallback span{
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.68rem;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+  }
+
+  /* ---------- REVIEWS ---------- */
+  .reviews{
+    background:var(--patina);
+    color:var(--text-light);
+    padding:100px 0;
+    position:relative;
+  }
+  .reviews .section-head h2{color:var(--text-light);}
+  .reviews .section-head p{color:rgba(246,245,241,0.8);}
+  .reviews .eyebrow{color:var(--ink);}
+  .reviews .eyebrow::before{background:var(--ink);}
+
+  .reviews-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:20px;
+  }
+  .review-card{
+    background:rgba(27,29,31,0.22);
+    border:1px solid rgba(246,245,241,0.25);
+    padding:28px 26px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+  }
+  .stars{
+    display:flex;
+    gap:3px;
+    color:var(--copper-light);
+  }
+  .review-card p.quote{
+    font-size:0.96rem;
+    flex-grow:1;
+  }
+  .review-meta{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.72rem;
+    letter-spacing:0.03em;
+    color:rgba(246,245,241,0.75);
+    border-top:1px solid rgba(246,245,241,0.2);
+    padding-top:14px;
+  }
+
+  .rating-banner{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+    margin-bottom:50px;
+    padding-bottom:40px;
+    border-bottom:1px solid rgba(246,245,241,0.25);
+  }
+  .rating-big{
+    font-family:'Oswald', sans-serif;
+    font-size:4rem;
+    line-height:1;
+    font-weight:700;
+  }
+  .rating-side{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+  }
+
+  /* ---------- SERVICE AREA ---------- */
+  .area{
+    padding:90px 0;
+    background:var(--paper);
+  }
+  .area-inner{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+  }
+  .town-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+  }
+  .town-chip{
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.82rem;
+    padding:10px 18px;
+    border:1px solid var(--line-light);
+    color:var(--ink);
+    background:var(--paper);
+  }
+  .area-note{
+    margin-top:24px;
+    color:var(--slate);
+    font-size:0.92rem;
+  }
+
+  /* ---------- CONTACT ---------- */
+  .contact{
+    background:var(--copper);
+    color:var(--text-light);
+    padding:100px 0;
+  }
+  .contact .eyebrow{color:var(--ink);}
+  .contact .eyebrow::before{background:var(--ink);}
+  .contact-grid{
+    display:grid;
+    grid-template-columns:0.9fr 1.1fr;
+    gap:60px;
+  }
+  .contact h2{
+    font-size:clamp(2rem, 4vw, 2.6rem);
+    margin-bottom:22px;
+  }
+  .contact-info-list{
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+    margin-top:32px;
+  }
+  .contact-info-item{
+    display:flex;
+    gap:14px;
+    align-items:flex-start;
+  }
+  .contact-info-item svg{flex-shrink:0; margin-top:2px;}
+  .contact-info-item .ci-label{
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.68rem;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:rgba(27,29,31,0.65);
+    margin-bottom:2px;
+  }
+  .contact-info-item .ci-value{
+    font-family:'Oswald', sans-serif;
+    font-size:1.15rem;
+  }
+
+  .form-card{
+    background:var(--ink);
+    padding:40px;
+    border:1px solid rgba(0,0,0,0.2);
+  }
+  .form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
+    margin-bottom:16px;
+  }
+  .field{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+  }
+  .field.full{grid-column:1/-1;}
+  .field label{
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.68rem;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--text-muted);
+  }
+  .field input, .field select, .field textarea{
+    background:var(--ink-2);
+    border:1px solid var(--line-dark);
+    color:var(--text-light);
+    padding:12px 14px;
+    font-family:'Inter', sans-serif;
+    font-size:0.92rem;
+    border-radius:2px;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus{
+    outline:2px solid var(--copper-light);
+    outline-offset:1px;
+    border-color:var(--copper-light);
+  }
+  .field textarea{resize:vertical; min-height:90px;}
+  .form-submit{
+    width:100%;
+    margin-top:6px;
+  }
+  .form-success{
+    display:none;
+    text-align:center;
+    padding:30px 10px;
+    color:var(--text-light);
+  }
+  .form-success svg{color:var(--copper-light); margin-bottom:14px;}
+  .form-success h3{margin-bottom:8px; font-size:1.2rem;}
+  .form-success p{color:var(--text-muted); font-size:0.9rem;}
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    background:var(--ink);
+    color:var(--text-muted);
+    padding:60px 0 26px;
+  }
+  .footer-grid{
+    display:grid;
+    grid-template-columns:1.4fr 1fr 1fr;
+    gap:40px;
+    padding-bottom:40px;
+    border-bottom:1px solid var(--line-dark);
+  }
+  .footer-grid h4{
+    color:var(--text-light);
+    font-size:0.82rem;
+    letter-spacing:0.08em;
+    margin-bottom:18px;
+    font-family:'JetBrains Mono', monospace;
+    text-transform:uppercase;
+  }
+  .footer-grid ul{display:flex; flex-direction:column; gap:10px;}
+  .footer-grid ul a{font-size:0.9rem; transition:color 0.2s ease;}
+  .footer-grid ul a:hover{color:var(--text-light);}
+  .footer-brand .brand-name{
+    font-family:'Oswald', sans-serif;
+    color:var(--text-light);
+    font-size:1.4rem;
+    margin-bottom:12px;
+  }
+  .footer-brand .brand-name span{color:var(--copper);}
+  .footer-brand p{max-width:320px; font-size:0.88rem;}
+  .footer-bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-top:26px;
+    font-size:0.78rem;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  .badge-bbb{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    border:1px solid var(--line-dark);
+    padding:8px 14px;
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.7rem;
+    letter-spacing:0.06em;
+    color:var(--text-light);
+    margin-top:18px;
+  }
+
+  /* ---------- REVEAL ---------- */
+  .reveal{
+    opacity:0;
+    transform:translateY(24px);
+    transition:opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.in{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width:960px){
+    .hero-grid{grid-template-columns:1fr;}
+    .hero-logo{max-width:340px; margin:0 auto;}
+    .hero-logo img{max-width:340px;}
+    .services-grid{grid-template-columns:repeat(2,1fr);}
+    .reviews-grid{grid-template-columns:repeat(2,1fr);}
+    .gallery-grid{grid-template-columns:repeat(2,1fr);}
+    .area-inner{grid-template-columns:1fr;}
+    .contact-grid{grid-template-columns:1fr;}
+    .footer-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:720px){
+    .nav-links{display:none;}
+    .hamburger{display:flex;}
+    .nav-phone .label{display:none;}
+    .services-grid{grid-template-columns:1fr;}
+    .reviews-grid{grid-template-columns:1fr;}
+    .gallery-grid{grid-template-columns:1fr;}
+    .rating-banner{gap:20px;}
+    .form-row{grid-template-columns:1fr;}
+    .footer-grid{grid-template-columns:1fr;}
+    .footer-bottom{flex-direction:column; align-items:flex-start;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="#home" class="brand" aria-label="SMG Roofing home">
+      <img src="smg-logo.jpg" alt="SMG Roofing — Accredited Business" class="brand-logo">
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#work">Recent Work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="tel:19028902164" class="nav-phone">
+        <span class="label">Call Mitch</span>
+        <span class="num">(902) 890-2164</span>
+      </a>
+      <a href="#contact" class="btn btn-copper">Free Estimate</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="home">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">TRURO, NS &middot; LOCALLY OWNED</div>
+        <h1>A ROOF DONE RIGHT, <em>BY THE GUY WHO CLIMBS IT.</em></h1>
+        <p class="lead">SMG Roofing &amp; Renovations is a locally owned crew based in Truro doing shingle and metal roofing, repairs, siding, and renovations across Colchester County. BBB accredited, 4.9 stars, and no subcontracted crews &mdash; just Mitch and his team.</p>
+        <div class="hero-actions">
+          <a href="tel:19028902164" class="btn btn-copper">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call (902) 890-2164
+          </a>
+          <a href="#reviews" class="btn btn-outline-dark">See Our Reviews</a>
+        </div>
+        <div class="trust-row">
+          <div class="trust-item">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 3 6v6c0 5 3.8 9 9 10 5.2-1 9-5 9-10V6l-9-4Z"/><path d="m9 12 2 2 4-4"/></svg>
+            <div><div class="t-main">BBB Accredited</div><div class="t-sub">Business in good standing</div></div>
+          </div>
+          <div class="trust-item">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2Z"/></svg>
+            <div><div class="t-main">4.9&#9733; &middot; 18 Reviews</div><div class="t-sub">Google reviews</div></div>
+          </div>
+          <div class="trust-item">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 6 9 17l-5-5"/></svg>
+            <div><div class="t-main">100% Recommend</div><div class="t-sub">Facebook reviews</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-logo">
+        <img src="smg-logo.jpg" alt="SMG Roofing — BBB Accredited Business">
+      </div>
+    </div>
+
+    <div class="roofline-divider" aria-hidden="true">
+      <svg viewBox="0 0 1200 44" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <polyline points="0,44 60,44 120,4 180,44 240,44 300,4 360,44 420,44 480,4 540,44 600,44 660,4 720,44 780,44 840,4 900,44 960,44 1020,4 1080,44 1140,44 1200,4 1200,44 0,44" fill="#EFEEE8"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <div class="eyebrow">WHAT WE DO</div>
+          <h2>Services</h2>
+        </div>
+        <p>From a single repair to a full tear-off, every job gets the same attention to the details that actually keep water out.</p>
+      </div>
+
+      <div class="services-grid reveal">
+        <div class="service-card">
+          <span class="num">01</span>
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 20h18"/><path d="M4 20V10l8-6 8 6v10"/><path d="M9 20v-6h6v6"/></svg>
+          <h3>Roof Replacement</h3>
+          <p>Full tear-off and re-roof with asphalt shingle or standing-seam metal, built for Nova Scotia winters.</p>
+        </div>
+        <div class="service-card">
+          <span class="num">02</span>
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s8-4.5 8-11.8V5l-8-3-8 3v5.2C4 17.5 12 22 12 22Z"/><path d="M9.5 12.5 11 14l3.5-4"/></svg>
+          <h3>Roof Repair &amp; Leak Detection</h3>
+          <p>Fast diagnosis and fix for leaks, damaged flashing, and storm damage &mdash; often the same week you call.</p>
+        </div>
+        <div class="service-card">
+          <span class="num">03</span>
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21 12 3l9 18"/><path d="M7 13h10"/><path d="M9 17h6"/></svg>
+          <h3>Metal Roofing</h3>
+          <p>Standing-seam and metal panel installs for long-term, low-maintenance protection.</p>
+        </div>
+        <div class="service-card">
+          <span class="num">04</span>
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 9h16M4 14h16M9 4v16M14 4v16"/></svg>
+          <h3>Siding</h3>
+          <p>Exterior siding installation and repair to match your new roofline.</p>
+        </div>
+        <div class="service-card">
+          <span class="num">05</span>
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="14" y="2" width="5" height="7"/><path d="M4 22 12 8l8 14"/><path d="M8 15h8"/></svg>
+          <h3>Chimney &amp; Flashing</h3>
+          <p>Custom steel chimney caps, flashing repair, and detail work around vents and valleys.</p>
+        </div>
+        <div class="service-card">
+          <span class="num">06</span>
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m14.5 3.5 6 6L8 22H2v-6L14.5 3.5Z"/><path d="m12.5 5.5 6 6"/></svg>
+          <h3>Renovations</h3>
+          <p>General exterior renovation work, from trim and fascia to full facelifts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why" id="why">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <div class="eyebrow">THE SMG STANDARD</div>
+          <h2>Why Homeowners Call SMG</h2>
+        </div>
+        <p>No sales team, no subcontracted crews &mdash; just a straight answer and a job done the way it was quoted.</p>
+      </div>
+
+      <div class="spec-sheet reveal">
+        <div class="spec-row">
+          <div class="spec-label">Accreditation</div>
+          <div class="spec-value">BBB Accredited Business</div>
+          <div class="spec-note">In good standing</div>
+        </div>
+        <div class="spec-row">
+          <div class="spec-label">Google Rating</div>
+          <div class="spec-value">4.9 / 5 &mdash; 18 reviews</div>
+          <div class="spec-note">Verified reviews</div>
+        </div>
+        <div class="spec-row">
+          <div class="spec-label">Facebook</div>
+          <div class="spec-value">100% recommended</div>
+          <div class="spec-note">11 reviews</div>
+        </div>
+        <div class="spec-row">
+          <div class="spec-label">Communication</div>
+          <div class="spec-value">Photo updates during every job</div>
+          <div class="spec-note">No surprises</div>
+        </div>
+        <div class="spec-row">
+          <div class="spec-label">Crew</div>
+          <div class="spec-value">Owner-operated</div>
+          <div class="spec-note">No subcontracted labor</div>
+        </div>
+        <div class="spec-row">
+          <div class="spec-label">Coverage</div>
+          <div class="spec-value">Truro &amp; Colchester County</div>
+          <div class="spec-note">Free estimates</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="work">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <div class="eyebrow">RECENT WORK</div>
+          <h2>A Few Roofs We&rsquo;ve Done Right</h2>
+        </div>
+        <p>A sample of recent shingle, metal, and repair jobs around Truro.</p>
+      </div>
+
+      <div class="gallery-grid reveal" id="galleryGrid">
+        <!-- Tiles populated via JS with graceful fallback if source photos are unavailable -->
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews" id="reviews">
+    <div class="wrap">
+      <div class="eyebrow">WHAT PEOPLE ARE SAYING</div>
+
+      <div class="rating-banner reveal">
+        <div class="rating-big">4.9<span style="font-size:1.6rem;">/5</span></div>
+        <div class="rating-side">
+          <div class="stars">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2Z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2Z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2Z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2Z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2Z"/></svg>
+          </div>
+          <div class="mono" style="font-size:0.85rem;">18 Google reviews &middot; 100% recommended on Facebook</div>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="quote">&ldquo;Mitch and his crew know their trade and never cut corners. He walked us through every option and genuinely cares about doing right by his customers.&rdquo;</p>
+          <div class="review-meta"><span>Gladys E.</span><span>Facebook</span></div>
+        </div>
+        <div class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="quote">&ldquo;There's a real difference between an installer and a tradesman &mdash; Mitch is the latter. Excellent workmanship, fair pricing, and he sent photos throughout the job.&rdquo;</p>
+          <div class="review-meta"><span>Devin R.</span><span>Google</span></div>
+        </div>
+        <div class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="quote">&ldquo;Called about a small leak and Mitch had someone out the very next day. Professional and upfront, and never tried to sell us anything we didn't need.&rdquo;</p>
+          <div class="review-meta"><span>Erin B.</span><span>Google</span></div>
+        </div>
+        <div class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="quote">&ldquo;Reliable, efficient, and easy to reach the whole way through. Our roof looks great.&rdquo;</p>
+          <div class="review-meta"><span>Raven</span><span>Google</span></div>
+        </div>
+        <div class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="quote">&ldquo;New shingle roofs on our house and shed, finished ahead of schedule and before the rain hit. Would definitely use them again.&rdquo;</p>
+          <div class="review-meta"><span>Patrick R.</span><span>Google</span></div>
+        </div>
+        <div class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="quote">&ldquo;Needed urgent repairs and SMG moved fast. Great work, no complaints.&rdquo;</p>
+          <div class="review-meta"><span>Madison P.</span><span>Google</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE AREA -->
+  <section class="area" id="area">
+    <div class="wrap area-inner">
+      <div class="reveal">
+        <div class="eyebrow">WHERE WE WORK</div>
+        <h2 style="font-size:clamp(1.8rem,3.6vw,2.4rem); margin-bottom:18px;">Serving Truro &amp; Colchester County</h2>
+        <p style="color:var(--slate); max-width:440px;">Based in Truro, NS, and on the road across the county for repairs, replacements, and free estimates.</p>
+      </div>
+      <div class="reveal">
+        <div class="town-list">
+          <span class="town-chip">Truro</span>
+          <span class="town-chip">Bible Hill</span>
+          <span class="town-chip">Onslow</span>
+          <span class="town-chip">Valley</span>
+          <span class="town-chip">Brookfield</span>
+          <span class="town-chip">Stewiacke</span>
+          <span class="town-chip">Tatamagouche</span>
+          <span class="town-chip">+ surrounding areas</span>
+        </div>
+        <p class="area-note">Don't see your town listed? Call anyway &mdash; we travel across Colchester County for the right job.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="wrap contact-grid">
+      <div class="reveal">
+        <div class="eyebrow">GET IN TOUCH</div>
+        <h2>Ready For A Free Estimate?</h2>
+        <p style="max-width:400px;">Call, email, or send the details below and Mitch will get back to you directly &mdash; no call centre, no middleman.</p>
+
+        <div class="contact-info-list">
+          <div class="contact-info-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div><div class="ci-label">Phone</div><div class="ci-value"><a href="tel:19028902164">(902) 890-2164</a></div></div>
+          </div>
+          <div class="contact-info-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+            <div><div class="ci-label">Email</div><div class="ci-value"><a href="mailto:mitchman_24@live.ca">mitchman_24@live.ca</a></div></div>
+          </div>
+          <div class="contact-info-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><div class="ci-label">Location</div><div class="ci-value">Truro, NS B6L 6V8</div></div>
+          </div>
+          <div class="contact-info-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <div><div class="ci-label">Hours</div><div class="ci-value">Call anytime for a free estimate</div></div>
+          </div>
+        </div>
+
+        <div class="badge-bbb">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 3 6v6c0 5 3.8 9 9 10 5.2-1 9-5 9-10V6l-9-4Z"/><path d="m9 12 2 2 4-4"/></svg>
+          BBB Accredited Business
+        </div>
+      </div>
+
+      <div class="form-card reveal">
+        <form id="estimateForm">
+          <div class="form-row">
+            <div class="field">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" required>
+            </div>
+            <div class="field">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="field">
+              <label for="service">Service Needed</label>
+              <select id="service" name="service">
+                <option>Roof Replacement</option>
+                <option>Roof Repair / Leak</option>
+                <option>Metal Roofing</option>
+                <option>Siding</option>
+                <option>Chimney / Flashing</option>
+                <option>Renovation</option>
+                <option>Not Sure</option>
+              </select>
+            </div>
+          </div>
+          <div class="field full" style="margin-bottom:16px;">
+            <label for="address">Address / Town</label>
+            <input type="text" id="address" name="address">
+          </div>
+          <div class="field full" style="margin-bottom:20px;">
+            <label for="details">Job Details</label>
+            <textarea id="details" name="details" placeholder="Tell us a bit about the job..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-ink form-submit">Submit Estimate Request</button>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 6 9 17l-5-5"/></svg>
+          <h3>Request Sent</h3>
+          <p>Thanks &mdash; Mitch will get back to you shortly. For a faster answer, call (902) 890-2164.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand-name">SMG<span>.</span> Roofing &amp; Renovations</div>
+        <p>Locally owned roofing and renovation contractor serving Truro and Colchester County, Nova Scotia.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why">Why Us</a></li>
+          <li><a href="#work">Recent Work</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:19028902164">(902) 890-2164</a></li>
+          <li><a href="mailto:mitchman_24@live.ca">mitchman_24@live.ca</a></li>
+          <li>Truro, NS B6L 6V8</li>
+          <li><a href="https://www.facebook.com/profile.php?id=100093542538823" target="_blank" rel="noopener">Facebook Page</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> SMG Roofing &amp; Renovations. All rights reserved.</span>
+      <span>BBB Accredited &middot; 4.9&#9733; Google &middot; Truro, NS</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile nav toggle
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  hamburger.addEventListener('click', () => {
+    const open = navLinks.style.display === 'flex';
+    navLinks.style.display = open ? 'none' : 'flex';
+    navLinks.style.flexDirection = 'column';
+    navLinks.style.position = 'absolute';
+    navLinks.style.top = '100%';
+    navLinks.style.left = '0';
+    navLinks.style.right = '0';
+    navLinks.style.background = 'rgba(27,29,31,0.98)';
+    navLinks.style.padding = '20px 28px';
+    navLinks.style.gap = '18px';
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    if (window.innerWidth <= 720) navLinks.style.display = 'none';
+  }));
+
+  // Footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Reveal on scroll
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+
+  // Contact form (front-end only demo — connect to a form service or email endpoint to receive real submissions)
+  const form = document.getElementById('estimateForm');
+  const success = document.getElementById('formSuccess');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    form.style.display = 'none';
+    success.style.display = 'block';
+  });
+
+  // Gallery — attempts to load recent project photos.
+  // NOTE: source URLs are temporary Facebook CDN links and will expire.
+  // Falls back to a clean placeholder tile so the layout never breaks.
+  const galleryPhotos = [
+    "https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/702570506_873013639160046_614878460907777390_n.jpg?stp=dst-jpg_tt6&cstp=mx1696x1222&ctp=s1696x1222&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=dujZuanC4eYQ7kNvwHhXwcn&_nc_oc=Ado03yjd22K4vFEhv0dN6-6l9WNjIQey1LGZdLRqyWyjXYReFRfXwbJBoAe41NB9nRY&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&_nc_gid=Guh4yPxocwCdM0TL7tN9dA&_nc_ss=7b2a8&oh=00_AQHpYdN94Oygk6Emk4f3fHiDPNKDUJ0ACO-IRamyLQ6RFw&oe=6A77E704",
+    "https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/702277946_873013542493389_7454484768165049994_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1152&ctp=s2048x1152&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=jw8CM41vSi0Q7kNvwEK4CPD&_nc_oc=Ado5y8ydOeJCYzZdF9S3HMSu8_3SeCgaitDhdUbMkQ3yFJgNpJqeMNJJDkTkYZCWn74&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&_nc_gid=MAHs-IQrZcbPBcto5uiMiw&_nc_ss=7b2a8&oh=00_AQGXlqxW8RBqOlGpf1lXr9qa3i5-nE0eUFiSOJEINnib2Q&oe=6A77E9F9",
+    "https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/696263632_868844246243652_1633182269201444431_n.jpg?stp=dst-jpg_tt6&cstp=mx1452x1384&ctp=s1452x1384&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=PiDC0Vlbak0Q7kNvwEVV5sJ&_nc_oc=AdoQXqYeBEp2D5EtlbvppFpxlszN_qVt-L9M05sJTMP9YcW5Ux6xOZ2Jkn631UmSX54&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&_nc_gid=wJIKlHdVNBkwgPuDhxrU-w&_nc_ss=7b2a8&oh=00_AQFzyP_pqKeu3xZfQ0_hhqlpvGQW-Z6Y8z9mvtx5im0-zQ&oe=6A77E50D",
+    "https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/670355124_844653285329415_8791859278860817939_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1139&ctp=s2048x1139&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5cw0rY23rs0Q7kNvwEBgPDA&_nc_oc=AdrGWMDqRzLZbna0P6_USuCnKmaFWy2--lTvt5wYsvKCpU3Wi041JD_UFh1TWyIu8h0&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&_nc_gid=YQPrkd5hU2zYns7_7BTRwQ&_nc_ss=7b2a8&oh=00_AQHcfDa3LgPIzM3qQSdq3yClNg7Qy-zP1Qfhr9mbewXKfQ&oe=6A77F1A3",
+    "https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/671694694_845444101917000_3346479818372830402_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1536&ctp=s2048x1536&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=EU_ASva0YC4Q7kNvwFS90dJ&_nc_oc=Adrqx0WblhQYM-QFlHAAtm-33nXwATD93a9DjGepDgAC66mkEwXr5QbkcaXnZQkk0f0&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&_nc_gid=KxEDT5fvPXRDjzQ2pklBUw&_nc_ss=7b2a8&oh=00_AQFyMEswqFcyDBnIxk6n-LTnxOeldAvf41_RKCvycxMNbA&oe=6A77DC3D",
+    "https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/615214490_771045019356909_5187763132957800875_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1792&ctp=s2048x1792&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=XZ-PKwgPeT0Q7kNvwFBmOkT&_nc_oc=AdqW22L91dNmTWn-ROKSa2WwNnMT137TVevxR-600tjV39Yq_HiM69kioGniQYlPJ4w&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&_nc_gid=tJcGMfe86maqs9_7moMrlw&_nc_ss=7b2a8&oh=00_AQEcMsacusTtMBxIy4O7WqEyfs1ls6JiWYOCsqyFOhELFQ&oe=6A780865"
+  ];
+  const galleryGrid = document.getElementById('galleryGrid');
+  galleryPhotos.forEach((src, i) => {
+    const tile = document.createElement('div');
+    tile.className = 'gallery-tile';
+    tile.innerHTML = `
+      <img src="${src}" alt="SMG Roofing project photo ${i+1}" loading="lazy"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="gallery-fallback">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+        <span>Project Photo</span>
+      </div>`;
+    galleryGrid.appendChild(tile);
+  });
+</script>
+
+</body>
+</html>
